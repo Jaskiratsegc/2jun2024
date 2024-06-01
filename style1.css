@@ -1,0 +1,356 @@
+body {background-image:url(https://img.freepik.com/free-vector/simple-valentine-s-day-background_36662-1352.jpg?size=626&ext=jpg&ga=GA1.1.44546679.1716854400&semt=ais_user);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 280% 100%;
+    }
+
+
+
+
+
+
+
+
+
+#pic22{
+height: 220px;
+width: 200px;
+display: block;
+margin: auto;
+
+
+position: relative;
+top: 70px;
+}
+
+
+*{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+.wrapper{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: 40px;
+}
+
+.image{
+     width: 300px;
+     position: relative;
+}
+
+img{
+    width: 100%;
+    display: block;
+    margin: auto;
+    position: relative;
+    
+}
+
+.content{
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: absolute;
+      background: rgba(0,0,0,0.6);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      opacity: 0;
+      transition: 0.6s;
+
+}
+
+.content:hover{
+    opacity: 1;
+}
+.content h1{
+     font-size: 40px;
+      color: #fffdd0;
+      margin-bottom: 15px;
+      text-align: center;
+      font-family: cursive;
+       }
+
+.content p{
+     font-size: 19px;
+     color: bisque;
+     text-align: center;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      }
+      
+.content > *{
+       transform: translateY(25px);
+        transition: transform 0.6s;
+
+}
+
+.content:hover > *{
+    transform: translateY(0px);
+
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+
+
+
+.text1{
+       justify-content: center;
+       text-align: center;
+       position: relative;
+       top: 160px;
+       font-family: "Great Vibes", cursive;
+       font-size: 35px;
+       color: rgb(45, 164, 207);
+       box-shadow: -10px 20px 90px #2dd7d1
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Kalam:wght@300;400;700&display=swap');
+
+
+
+.text2{
+    justify-content: center;
+    text-align: center;
+  position: relative;
+  top: 220px;
+  font-size: 20px;
+  font-family: "Kalam", cursive;
+}
+
+
+.heart{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+     height: 70px;
+     width: 70px;
+     background: #f20044;
+
+     transform: rotate(-45deg);
+     box-shadow: -10px 10px 90px #f20044; 
+     animation: heart 0.6s linear infinite;
+     position: relative;
+     top: 440px;
+}
+@keyframes heart{
+    0%{
+        transform: rotate(-45deg) scale(1.07);
+    }
+    80%{
+        transform: rotate(-45deg) scale(1.0);
+    }
+    100%{
+        transform: rotate(-45deg) scale(0.8);
+    }
+
+}
+
+.heart:before{
+    display: flex;
+    justify-content: center;
+content:'';
+position: absolute;
+height: 70px;
+width: 70px;
+background: #f20044;
+top: -50%;
+border-radius: 50px;
+box-shadow: -10px -10px 90px #f20044; 
+}
+
+.heart:after{
+    display: flex;
+    justify-content: center;
+    content:'';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background: #f20044;
+    right: -50%;
+    border-radius: 50px;
+    box-shadow: 10px 10px 90px #f20044; 
+    }
+    
+
+
+
+
+
+
+
+
+
+
+    body2{
+        display: flex;
+        place-items: center;
+        min-height: 100vh;
+        overflow: hidden;
+        background: #fae1dd;
+        margin: auto;
+        justify-content: center;
+    }
+    .container{
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        position: relative;
+        top: 380px;
+    }
+    .valentines{
+
+        top: 400px;
+        left: 75px;
+        cursor: pointer;
+        animation: up 3s linear infinite;
+        margin: auto;
+        justify-content: center;
+
+    }
+    .envelope{
+    
+        width: 300px;
+        height: 200px;
+        background: #f08080;
+        display: grid;
+        place-items: center;
+        justify-content: center;
+
+    }
+    .envelope::before{
+        content: '';
+        position: absolute;
+        width: 212px;
+        height: 212px;
+        background: #f08080;
+        transform: rotate(45deg);
+        top: -105px;
+        left: 44px;
+        border-radius: 30px 0 0 0;
+        justify-content: center;
+    }
+    .front{
+        position: absolute;
+        border-right: 180px solid #f4978e;
+        border-top: 95px solid transparent;
+        border-bottom: 100px solid transparent;
+        left: 120px;
+        top: 5px;
+        width: 0;
+        height: 0;
+        z-index: 10;
+        justify-content: center;
+    }
+    .front::before{
+        position: absolute;
+        content: '';
+        border-left: 300px solid #fda996;
+        border-top: 195px solid transparent;
+        left: -120px;
+        top: -95px;
+    }
+    .card{
+        position: relative;
+        width: 250px;
+        height: 180px;
+        background: #fff;
+        border-radius: 2px;
+        display: grid;
+        place-items: center;
+        transition: 1s;
+    }
+    .card::before{
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        border: 2px solid #003049;
+        border-style: dashed;
+    }
+    .valentines:hover .card{
+        transform: translateY(-100px);
+    }
+    .card .text{
+        font-family: 'Brush Script MT', cursive;
+        font-size: 20px;
+        text-align: center;
+        line-height: 25px;
+        color: #003049;
+    }
+    .card .heart{
+        position: relative;
+        width: 35px;
+        height: 35px;
+        background: red;
+        bottom: 20px;
+        transform: rotate(45deg);
+        border-radius: 50% 0 0 50%;
+    }
+    .card .heart::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: red;
+        border-radius: 0 50% 50% 0;
+        right: 0;
+        transform: rotate(-90deg);
+        transform-origin: top;
+    }
+    .card .heart::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: red;
+        right: -18px;
+    }
+    @keyframes up{
+        0%, 100%{
+            transform: translateY(0);
+        }
+        50%{
+            transform: translateY(-30px);
+        }
+    }
+    .valentines::before{
+        content: '';
+        position: absolute;
+        width: 330px;
+        height: 25px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, .3);
+        top: 265px;
+        left: -15px;
+        animation: scale 3s linear infinite;
+    }
+    @keyframes scale{
+        0%, 100%{
+            transform: scaleX(1);
+        }
+        50%{
+            transform: scaleX(.85);
+        }
+    }
+
+
+
+
+
+
+
+
